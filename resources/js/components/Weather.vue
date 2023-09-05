@@ -222,9 +222,18 @@ onBeforeMount(async () => {
         </div>
       </div>
       <transition name="bounce">
-        <div v-if="currentPlace.id" class="relative shadow-md text-gray-600 focus-within:text-gray-400 mt-16">
-          <span class="absolute inset-y-0 right-1 flex items-center pl-2">
-            <button type="submit" class="p-1 focus:outline-none focus:shadow-outline" @click="restoreDefault">
+        <div 
+          v-if="currentPlace.id"
+          class="relative shadow-md text-gray-600 focus-within:text-gray-400 mt-16"
+        >
+          <span 
+            class="absolute inset-y-0 right-1 flex items-center pl-2"
+          >
+            <button 
+              type="submit"
+              class="p-1 focus:outline-none focus:shadow-outline"
+              @click="restoreDefault"
+            >
               <span v-if="isLoading">
                 <i class="animate-spin bi bi-hourglass-bottom"></i>
               </span>
@@ -233,8 +242,15 @@ onBeforeMount(async () => {
               </span>
             </button>
           </span>
-          <input type="text" name="q" @blur="hideResults" @input="searchPlaces" v-model="searchTerm" class="search-input"
-            placeholder="Search..." autocomplete="off" />
+          <input 
+            type="text" 
+            name="q" 
+            @blur="hideResults" 
+            @input="searchPlaces" 
+            v-model="searchTerm" 
+            class="search-input"
+            placeholder="Search..." autocomplete="off" 
+          />
           <transition name="fade" appear>
             <div 
               v-if="resultsList.length && showResults"
@@ -256,7 +272,9 @@ onBeforeMount(async () => {
       </transition>
       <transition name="bounce">
         <div v-if="selectedPlace.fsq_id">
-          <div class="flex text-white bg-teal-950 p-5 shadow-md items-center mt-8 rounded-lg">
+          <div 
+            class="flex text-white bg-teal-950 p-5 shadow-md items-center mt-8 rounded-lg"
+          >
             <img
               :src="selectedPlace.categories[0].icon.prefix + '64' + selectedPlace.categories[0].icon.suffix"
               alt="icon"
@@ -273,7 +291,9 @@ onBeforeMount(async () => {
         </div>
       </transition>
       <current-weather-details :weather="currentWeatherData" />
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-5">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-5"
+      >
         <forecast-details
           v-for="weather in fiveDaysList"
           :weather="weather" 

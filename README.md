@@ -1,7 +1,7 @@
 
 # Weather App
 
-My weather app stands out as the best implementation because I am using **Laravel 10** as my backend the latest laravel version, for my frontend I'm using **VueJS 3** implementing ```<script setup>``` which is more succinct code with less boilerplate, better runtime performance and better IDE type-inference performance. Also the implementation is the best with it's beautiful but simple UI and functionalities.
+My weather app stands out as the best implementation because I am using **Laravel 10** as my backend the latest laravel version, for my frontend I'm using **VueJS 3** implementing ```<script setup>``` which is more succinct code with less boilerplate, better runtime performance and better IDE type-inference performance. Also the implementation is the best with it's beautiful but simple UI and functionalities complimented with simple animations.
 
 
 ## Installation

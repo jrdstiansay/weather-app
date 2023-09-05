@@ -12,9 +12,10 @@ const props = defineProps({
     <div v-if="props.weather">
       <div class="shadow-md bg-white rounded-md pb-8">
         <div class="flex justify-center lg:justify-right">
-          <img :src="'https://openweathermap.org/img/wn/' +
-            props.weather.icon +
-            '@2x.png'
+          <img 
+            :src="'https://openweathermap.org/img/wn/' +
+              props.weather.icon +
+              '@2x.png'
             " alt="weather" />
         </div>
         <div class="uppercase text-xl font-bold w-full text-center mb-4">

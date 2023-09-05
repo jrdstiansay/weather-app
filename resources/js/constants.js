@@ -1,3 +1,12 @@
+/**
+ * Constanst use in the application
+ * 
+ */
+
+/**
+ * Getting full name of days
+ * @type { Array<String> }
+ */
 export const days = [
   'Sunday',
   'Monday',
@@ -7,6 +16,11 @@ export const days = [
   'Friday',
   'Saturday'
 ];
+
+/**
+ * Array full name of months
+ * @type { Array<String> }
+ */
 export const months = [
   'January',
   'February',
@@ -21,6 +35,11 @@ export const months = [
   'November',
   'December'
 ];
+
+/**
+ * Choices for the places
+ * @type { Object }
+ */
 export const places = [
   {
     id: 1,
